@@ -1,0 +1,15 @@
+{
+  "name": "spotify-web-app-clone",
+  "version": "1.0.0",
+  "description": "Built Clone of Spotify Web App using HTML, Tailwind CSS and JavaScript. It is responsive in nature.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "tailwindcss": "^3.4.1"
+  }
+}
