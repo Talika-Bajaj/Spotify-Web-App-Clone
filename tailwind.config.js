@@ -44,6 +44,8 @@ module.exports = {
         'ms-850': {'raw': '(min-height: 851px)'},
         's-860': {'raw': '(min-height: 860px)'},
         'ms-550': {'raw': '(min-height: 550px)'},
+        'ms-628': {'raw': '(max-height: 629px)'},
+        'mhs-640': {'raw': '(min-height: 640px)'},
         'ms-640': {'raw': '(min-height: 640px)'},
         'ms-720': {'raw': '(min-height: 720px)'},
         'mhs-1180': {'raw': '(min-height: 1180px)'},

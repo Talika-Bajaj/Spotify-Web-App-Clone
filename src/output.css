@@ -1001,6 +1001,11 @@ video {
   padding-bottom: 5px;
 }
 
+.py-\*7 {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+
 .py-2 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -1565,16 +1570,22 @@ video {
   }
 }
 
+@media (max-height: 629px) {
+  .ms-628\:h-\[92vh\] {
+    height: 92vh;
+  }
+}
+
+@media (min-height: 640px) {
+  .mhs-640\:h-\[92vh\] {
+    height: 92vh;
+  }
+}
+
 @media (min-height: 1180px) {
   .mhs-1180\:py-5 {
     padding-top: 1.25rem;
     padding-bottom: 1.25rem;
-  }
-}
-
-@media ((min-height: 550px) and (max-height: 638px) and (min-height: 640px)) {
-  .mhs-5-6-6\:h-\[92vh\] {
-    height: 92vh;
   }
 }
 
