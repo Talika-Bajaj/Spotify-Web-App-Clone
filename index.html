@@ -1,0 +1,874 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="src/output.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body class="bg-black h-screen font-spotify-font">
+    <div class="main-container w-full h-full bg-black text-white">
+        <div class="content p-2">
+            <div class="sections grid grid-cols-297-78 gap-2 h-[87vh] mb-1  s-1060-1160:grid-cols-25-72 s-1160-1260:grid-cols-25-73 m-xxl:grid-cols-25-73.3 s-860-1060:grid-cols-28-69 s-641-860:grid-cols-35-61 s-600-641:grid-cols-40-56 s-599:grid-cols-1 mhs-5-6-6:h-[92vh]">
+
+                <div id="left" class=" h-full  flex flex-col gap-1 text-white duration-300 -left-80 s-599:absolute s-599:bg-black s-599:z-10 s-599:w-*246 s-599:pr-*7">
+                    <div class="bg-divs p-5 rounded-xl">
+                        <div class="flex items-center mb-4">
+                            <img src="https://cdn3.emoji.gg/emojis/8655-spotify-white.png" width="25px" alt="">
+                            <span class=" cursor-pointer font-semibold">Spotify</span>
+                        </div>
+                        <div class="mb-4 flex items-center gap-4 cursor-pointer duration-300">
+                            <span class="material-symbols-outlined text-*25">home</span>
+                            <span class="font-bold">Home</span>
+                        </div>
+                        <div class="flex items-center gap-4 duration-300 text-c-search cursor-pointer hover:text-white">
+                            <i class="bi bi-search text-*22 "></i>
+                            <span class="  font-bold ">Search</span>
+                        </div>
+
+                    </div>
+                    <div class="section flex flex-col gap-5 bg-divs py-5 px-2 rounded-xl h-full s-599:gap-7">
+                        <div class="flex justify-between items-center px-4">
+                            <div class="flex gap-2 items-center">
+                                <span aria-hidden="true" class="text-c-search duration-300 group-hover:text-white">
+                                    <svg data-encore-id="icon" role="img" aria-hidden="true" viewbox="0 0 24 24"
+                                        width="25px">
+                                        <path
+                                            d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                                            fill="white"></path>
+                                    </svg>
+                                </span>
+                                <p class="text-*17 font-semibold text-c-search cursor-pointer duration-300 group hover:text-white">Your Library</p>
+                            </div>
+                            <i class="bi bi-plus-lg text-2xl text-c-search duration-300 hover:px-*3 hover:text-white hover:bg-black hover:rounded-*50%"></i>
+                        </div>
+                        <div class="bg-inner-div p-3 rounded-lg -mb-4">
+                            <div class="w-*91">
+
+                                <h3 class="font-bold mb-2">Create your first playlist</h3>
+                                <p class="font-semibold text-sm mb-2 s-599:mb-4">It's easy, we'll help you</p>
+                                <button
+                                    class="hidden px-3 py-2 bg-white text-black font-bold rounded-3xl s-600-641:hidden m-sm:block ms-850:block s-850:hidden">Create
+                                    Playlist</button>
+                            </div>
+                        </div>
+                        <div class="hidden bg-inner-div p-4 mt-3 rounded-lg m-sm:block m-xxl:block ms-850:block s-850:hidden">
+                            <div class="w-*91">
+
+                                <h3 class="font-bold mb-2">Let's find out some podcasts to follow</h3>
+                                <p class="font-semibold text-sm mb-2 s-599:mb-4">We'll keep you updated on new episodes
+                                </p>
+                                <button class="px-3 py-2 bg-white text-black font-bold rounded-3xl">Browse
+                                    Podcasts</button>
+                            </div>
+                        </div>
+                        <div class="small-text p-4 text-small-txt">
+                            <ul class="flex flex-wrap w-*86 gap-x-7 gap-y-3 s-720-850:flex-col">
+                                <li class="text-*11 font-semi"><a href="">Legal</a></li>
+                                <li class="text-*11 font-semi"><a href="">Safety & Privacy Cnetre</a></li>
+                                <li class="text-*11 font-semi"><a href="">Privacy Policy</a></li>
+                                <li class="text-*11 font-semi"><a href="">Cookies</a></li>
+                                <li class="text-*11 font-semi"><a href="">About Ads</a></li>
+                                <li class="text-*11 font-semi"><a href="">Accessibility</a></li>
+                            </ul>
+                            <p class="text-xs font-semi mt-2 duration-300 hover:underline"><a href="">Cookies</a></p>
+                        </div>
+                        <div class="lang ml-3">
+                            <button
+                                class="border-gray-500 border py-*5 px-*11 rounded-2xl duration-300 hover:scale-105 hover:border-white">
+                                <i class="bi bi-globe"></i>
+                                <span class="font-bold">English</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="right rounded-b-xl overflow-scroll 1xl:w-full xxl:w-full">
+                    <header class="bg-head rounded-t-xl px-5 py-2 sticky">
+                        <div class="flex justify-between w-full items-center ms-1060:max-w-[72vw] ">
+                            <div class="sign s-599:hidden cursor-not-allowed">
+                                <span
+                                    class="material-symbols-outlined text-xl duration-300  py-*2 pl-*10 pr-*2 bg-arrow font-light rounded-*50%">arrow_back_ios</span>
+                                <span
+                                    class="material-symbols-outlined text-xl duration-300 py-*2 pl-*7 pr-*5 bg-arrow font-light rounded-*50%">arrow_forward_ios</span>
+                            </div>
+
+                            <div class="buttons">
+                                <button class="font-bold mr-3 text-small-txt">Sign Up</button>
+                                <button
+                                    class="text-black font-bold bg-white px-7 py-3 rounded-full duration-300 hover:scale-105">Log
+                                    In</button>
+                            </div>
+
+
+
+                            <div id="ham" class="ham hidden cursor-pointer w-8 h-8 relative s-599:block">
+                                <div
+                                    class="bar w-7 h-1 bg-white absolute top-4 -mt-0.5 transition-all duration-300 before:content-[''] before:w-7 before:h-1 before:transition-all before:duration-300 before:bg-white before:absolute  before:-translate-y-2
+                                after:content-[''] after:w-7 after:h-1 after:transition-all after:duration-300 after:bg-white after:absolute after:translate-y-2">
+                                </div>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="songs px-5 flex flex-col gap-12 bg-song-bg ">
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Popular
+                                    artists</h2>
+                                <a href="" class="text-sm font-bold text-c-search duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                   
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616100005174fc7c542c04b5f7dc8f1b1c16"
+                                                alt="" class="rounded-*50% mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">Anirudh Ravichander</h3>
+                                            <p class="text-sm font-semi text-small-txt">Artist</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616100005174cb6926f44f620555ba444fca"
+                                                alt="" class="rounded-*50% mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Pritam</h3>
+                                            <p class="text-sm font-semi text-small-txt">Artist</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616100005174935b2dd507212bd72a71d7f9"
+                                                alt="" class="rounded-*50% mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Alka Yagnik</h3>
+                                            <p class="text-sm font-semi text-small-txt">Artist</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group  hover:bg-gray-500/30 s-1060:hidden">
+                                  
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab676161000051748de0e6e7e55d7773931ab7f4"
+                                                alt="" class="rounded-*50% mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Udit Narayan</h3>
+                                            <p class="text-sm font-semi text-small-txt">Artist</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit  s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab6761610000517436a7262247318ff0f1ad00da"
+                                                alt="" class="rounded-*50% w-*147 h-*147 object-cover mb-4 max-w-*88 m-1430:mt-*7 m-1430:mx-auto m-1430:mb-*25 m-1430:scale-105 m-2xl:scale-110">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Shreya Ghoshal</h3>
+                                            <p class="text-sm font-semi text-small-txt">Artist</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                               
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Popular Albums</h2>
+                                <a href="" class="text-sm font-bold duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">ANIMAL</h3>
+                                            <p class="text-sm text-small-txt font-semi"><span class="duration-300 hover:underline"> Manan Bhardwaj</span>, <span class="duration-300 hover:underline">Vishal Mishra</span>, <span class="duration-300 hover:underline">Jaani</span>
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Still Rollin</h3>
+                                            <p class="text-sm font-semi text-small-txt duration-300 hover:underline">Shubh</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616d00001e020d3449f333a83a25feb423f8"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Husn</h3>
+                                            <p class="text-sm font-semi text-small-txt hover:underline">Anuv Jain</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-1060:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Moosetape</h3>
+                                            <p class="text-sm font-semi text-small-txt hover:underline">Sidhu Moose Wala</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67616d00001e02021d7017f73387b008eab271"
+                                                alt="" class="rounded-md mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Satranga (From "ANIMAL")</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2"><span class="hover:underline">Arijit Singh</span>,<span class="hover:underline">Shreyas Puranik</span>,<span class="hover:underline">Siddharth - Garima</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Popular radio</h2>
+                                <a href="" class="text-sm font-bold duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4YRxDV8wJFPHPTeXepOstw/en"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Arijit Singh Radio</h3>
+                                            <p class="text-sm font-semi text-small-txt">With Neha Kakkar, Pritam, KK and more</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/2FKWNmZWDBZR4dE5KX4plR/en"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Diljit Dosanjh Radio</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">With Garry Sandhu, Ranjit Bawa, Amrinder Gill and more</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4K6blSRoklNdpw4mzLxwfn/en"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Kumar Sanu Radio</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">With Udit Narayan, Alka Yagnik, Anuradha Paudwal and more</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-1060:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4PULA4EFzYTrxYvOVlwpiQ/en"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Sidhu Moose Wala Radio</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">With Ammy Virk, Amrit Maan, Karan Aujla and more</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://seeded-session-images.scdn.co/v2/img/122/secondary/artist/4fEkbug6kZzzJ8eYX6Kbbp/en-GB"
+                                                alt="" class="rounded-md mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">KK Radio</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">With Ankit Tiwari, Mohit Chauhan, Javed Ali and more</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Featured Charts</h2>
+                                <a href="" class="text-sm font-bold duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Top Songs - Global</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Your weekly update of the most played tracks right now - Global.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_us_default.jpg"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Top Songs - USA</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Your weekly update of the most played tracks right now - USA.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_global_default.jpg"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Top 50 Global</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Your daily update of the most played tracks right now - Global.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-1060:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://charts-images.scdn.co/assets/locale_en/regional/daily/region_us_default.jpg"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Top 50 - USA</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Your daily update of the most played tracks right now - USA.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://charts-images.scdn.co/assets/locale_en/viral/daily/region_global_default.jpg"
+                                                alt="" class="rounded-md mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Viral 50- Global</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Your daily update of the most viral tracks right now - Global.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Spotify Playlists</h2>
+                                <a href="" class="text-sm font-bold duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67706f0000000215dda1167224fd1bf3028551"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Today's Top Hits</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Ariana Grande is on top of the Hottest 50!</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67706f0000000254473de875fea0fd19d39037"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">lofi beats</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">chill beats, lofi vibes, new tracks every week...</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67706f00000002dec17246891b5b4eb97bdb0d"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Chillout Lounge</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Just lean back and enjoy relaxed beats.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-1060:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67706f00000002d771dc645afe9b87978b1d3e"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">All Out 2020s</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">The biggest songs of the 2020s.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67706f00000002bdeb1c317ac2dd10f2397e4c"
+                                                alt="" class="rounded-md mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">Jazz in the Background</h3>
+                                            <p class="text-sm font-semi text-small-txt line-clamp-2">Soft instrumental Jazz for all your activities.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Spotify original & exclusive shows
+                                    artists</h2>
+                                <a href="" class="text-sm font-bold duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1fde3404901270d81ee3bbc408"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">The Ranveer Show</h3>
+                                            <p class="text-sm font-semi text-small-txt">BeerBiceps</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f9f2d87dfc8198ad84728893a"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">The Joe Rogan Experience</h3>
+                                            <p class="text-sm font-semi text-small-txt">Joe Rogan</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1fd25f84e9f3884ce237cc741c"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">The Horror Show by Khooni Monday - Scary Stories in Hindi</h3>
+                                            <p class="text-sm font-semi text-small-txt">TMV Studios</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-1060:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f6aaad040cca397a48b82e0c2"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">Aa Modati Alajadi with Lipsika | a Telugu Podcast</h3>
+                                            <p class="text-sm font-semi text-small-txt">Spotify Studios</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f3c0cd1efd66f78f05f13632a"
+                                                alt="" class="rounded-md mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">True Story Bro! with Triggered Insaan</h3>
+                                            <p class="text-sm font-semi text-small-txt">Spotify</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section>
+
+                            <div class="heading flex justify-between items-center s-235:items-baseline">
+                                <h2 class="text-2xl font-bold duration-300 cursor-pointer hover:underline">Trending Episodes</h2>
+                                <a href="" class="text-sm font-bold duration-300 hover:underline s-235:text-xs">Show All</a>
+                            </div>
+                            <div
+                                class="list mt-1 grid grid-cols-5 gap-*26 s-1355:grid-cols-4 s-860-1060:grid-cols-3 s-641-860:grid-cols-2 s-640:grid-cols-1 s-599:grid-cols-2 s-385:grid-cols-1">
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1fe46079c9a5b7c544c6922ac9"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Welcome back, RJ Balaji - Naallanaa Murukku</h3>
+                                            <p class="text-sm font-semi text-small-txt">Jun 2021 <span>•</span> 15 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-599:block s-385:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f099a357ed0a2a39424f2903d"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105 s-640:top-[117px] s-640:right-[6px] s-640:group-hover:animate-move-in-s-640 s-640:text-2xl s-640:pr-4 s-640:py-*10 s-640:pl-5"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">#73: Hotel Of Horrors (Serial Killer - H. H. Holmes)</h3>
+                                            <p class="text-sm font-semi text-small-txt">June 2021 <span>•</span> 93 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-640:hidden s-641-860:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f21f7ead44047173302bc912e"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Anubis : God of Death - Part 2</h3>
+                                            <p class="text-sm font-semi text-small-txt">Jun 2021 <span>•</span> 16 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer group ms-550:w-inherit s-1060:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-inherit">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f21f7ead44047173302bc912e"
+                                                alt="" class="rounded-md mb-4 max-w-*88">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-play rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden animate-move-out group-hover:inline group-hover:animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 line-clamp-1">Anubis : God of Death - Part 1</h3>
+                                            <p class="text-sm font-semi text-small-txt">Jun 2021 <span>•</span> 13 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card duration-300 p-4 bg-card hover:bg-card-h rounded-xl cursor-pointer ms-550:w-inherit group s-1355:hidden hover:bg-gray-500/30">
+                                    <div class="info w-*147 ms-550:w-auto">
+                                        <div class="img relative">
+                                            <img src="https://i.scdn.co/image/ab67656300005f1f36dbb0b2d65004488fcc322f"
+                                                alt="" class="rounded-md mb-4">
+                                            <!-- <span class="absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                            <span
+                                                class="absolute top-[85px] right-[4px] text-black duration-300 fa fa-play bg-green-600 rounded-*50% pl-*18 pr-*14 py-*14 text-*22 hidden group-hover:inline animate-move-in hover:scale-105"></span>
+                                            <!-- <span class="text-black bg-green-700 pt-*22 pr-*5 pb-*5 pl-2 rounded-*50% absolute"><i class="bi bi-play-fill text-*35"></i></span> -->
+                                        </div>
+                                        <div class="para">
+                                            <h3 class="font-bold pb-1 truncate">Mahabharata Episode 1: Beginnings</h3>
+                                            <p class="text-sm font-semi">Apr 2014 <span>•</span> 24 min</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+
+
+                        
+                        <section class="flex justify-between s-1060:flex-col s-600-641:gap-8 s-1060:gap-6">
+                            <div class="flex gap-24 s-641-860:flex-wrap s-640:flex-col s-600-641:gap-12 ">
+
+                                <ul>
+                                    <li class="font-bold mb-2"><a href="">Company</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt  hover:text-white hover:underline"><a href="">About</a>
+                                    </li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a href="">Jobs</a>
+                                    </li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a href="">For the
+                                            Record</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="font-bold mb-2"><a href="">Communities</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a href="">For
+                                            Artists</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a
+                                            href="">Developers</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a
+                                            href="">Advertising</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a
+                                            href="">Investors</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a
+                                            href="">Vendors</a></li>
+                                </ul>
+                                <ul>
+                                    <li class="font-bold mb-2"><a href="">Useful links</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a
+                                            href="">Support</a></li>
+                                    <li class="pb-1 duration-300 text-small-txt hover:text-white hover:underline"><a href="">Free
+                                            Mobile App</a></li>
+                                </ul>
+
+                            </div>
+                            <div class="icons">
+                                <span class="mx-3 bg-icon px-2 py-*5 rounded-*50% s-640:ml-0"><i
+                                        class="bi bi-instagram"></i></span>
+                                <span class="mx-3 bg-icon px-2 py-*5 rounded-*50%"><i
+                                        class="bi bi-twitter"></i></span>
+                                <span class="mx-3 bg-icon px-2 py-*5 rounded-*50%"><i
+                                        class="bi bi-facebook"></i></span>
+                            </div>
+                        </section>
+                        <hr class="border-white/10 border-t-*1">
+
+                        <section class="footnote pb-14">
+                            <p class="text-small-txt text-sm font-semi">&#169; 2024 Spotify AB</p>
+                        </section>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer flex justify-between items-center py-2 px-3  bg-gradient-to-l from-cyan-500 via-purple-500 to-fuchsia-500 s-640:flex-col s-640:items-start mhs-1180:py-5">
+                <div>
+                    <h3 class="font-bold text-sm mb-1">Preview of Spotify</h3>
+                    <p class="font-semi">Sign up to get unlimited songs and podcasts with occasional ads. No credit card needed.</p>
+                </div>
+                <div class="s-640:mt-2">
+                    <button
+                    class="text-black font-bold bg-white px-7 py-2 rounded-full duration-300 hover:scale-105 ">Sign Up free</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
