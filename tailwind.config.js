@@ -45,7 +45,7 @@ module.exports = {
         's-860': {'raw': '(min-height: 860px)'},
         'ms-550': {'raw': '(min-height: 550px)'},
         'ms-628': {'raw': '(max-height: 629px)'},
-        'mhs-640': {'raw': '(min-height: 640px)'},
+        'mhs-648': {'raw': '(min-height: 648px)'},
         'ms-640': {'raw': '(min-height: 640px)'},
         'ms-720': {'raw': '(min-height: 720px)'},
         'mhs-1180': {'raw': '(min-height: 1180px)'},
@@ -88,7 +88,7 @@ module.exports = {
         '*95':'95%'  
       },
       gridTemplateColumns: {
-        '297-78': '297px 77.5%',
+        '314-76': '314px 76%',
         '247-78': '247px 78%',
         '25-70': '25vw 70.7vw',
         '25-72': '25vw 72.7vw',
@@ -140,7 +140,7 @@ module.exports = {
         'sec-color': 'rgba(0, 0, 0, 0.6)',
         'head': '#101010',
         'opt': '#262424',
-        'card-h':'#282828',
+        'card-h':'rgba(40,40,40,0.7)',
         'play':'#1FDF64',
         'card':'#242424',
        
@@ -149,6 +149,7 @@ module.exports = {
         'song-bg': 'linear-gradient(0.5turn, gray -175%, #121212 20%,#121212 94%)',
       },
       margin: {
+        '*6': '6px',
         '*7': '7px',
         '*25': '25px',
       },
