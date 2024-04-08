@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.4.1 | MIT License | https://tailwindcss.com
+! tailwindcss v3.4.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -211,6 +211,8 @@ textarea {
   /* 1 */
   line-height: inherit;
   /* 1 */
+  letter-spacing: inherit;
+  /* 1 */
   color: inherit;
   /* 1 */
   margin: 0;
@@ -234,9 +236,9 @@ select {
 */
 
 button,
-[type='button'],
-[type='reset'],
-[type='submit'] {
+input:where([type='button']),
+input:where([type='reset']),
+input:where([type='submit']) {
   -webkit-appearance: button;
   /* 1 */
   background-color: transparent;
@@ -492,6 +494,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 ::backdrop {
@@ -542,6 +548,10 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
+  --tw-contain-size:  ;
+  --tw-contain-layout:  ;
+  --tw-contain-paint:  ;
+  --tw-contain-style:  ;
 }
 
 .absolute {
@@ -761,10 +771,6 @@ video {
 
 .justify-between {
   justify-content: space-between;
-}
-
-.gap-\*26 {
-  gap: 26px;
 }
 
 .gap-0 {
@@ -1299,10 +1305,6 @@ video {
   background-color: rgba(40,40,40,0.7);
 }
 
-.hover\:bg-gray-500\/30:hover {
-  background-color: rgb(107 114 128 / 0.3);
-}
-
 .hover\:px-\*3:hover {
   padding-left: 3px;
   padding-right: 3px;
@@ -1542,7 +1544,7 @@ video {
   }
 }
 
-@media (min-height: 550px) {
+@media (min-height: 250px) {
   .ms-550\:w-auto {
     width: auto;
   }
@@ -1553,8 +1555,8 @@ video {
 }
 
 @media (max-height: 629px) {
-  .ms-628\:h-\[93vh\] {
-    height: 93vh;
+  .ms-628\:h-\[95vh\] {
+    height: 95vh;
   }
 }
 
@@ -1602,6 +1604,16 @@ video {
 
   .s-860-1060\:grid-cols-3 {
     grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media ((min-width: 641px) and (max-width: 700px)) {
+  .s-641-700\:h-\[95vh\] {
+    height: 95vh;
+  }
+
+  .s-641-700\:h-\[105vh\] {
+    height: 105vh;
   }
 }
 

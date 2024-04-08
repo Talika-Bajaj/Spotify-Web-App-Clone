@@ -43,7 +43,7 @@ module.exports = {
 
         'ms-850': {'raw': '(min-height: 851px)'},
         's-860': {'raw': '(min-height: 860px)'},
-        'ms-550': {'raw': '(min-height: 550px)'},
+        'ms-550': {'raw': '(min-height: 250px)'},
         'ms-628': {'raw': '(max-height: 629px)'},
         'mhs-648': {'raw': '(min-height: 648px)'},
         'ms-640': {'raw': '(min-height: 640px)'},
@@ -61,6 +61,7 @@ module.exports = {
         's-1160-1260': { 'raw': '((min-width: 1160px) and (max-width: 1355px))' },
         's-1060-1355': { 'raw': '((min-width: 1060px) and (max-width: 1355px))' },
         's-860-1060': { 'raw': '((min-width: 860px) and (max-width: 1060px))' },
+        's-641-700': { 'raw': '((min-width: 641px) and (max-width: 700px))' },
         's-641-860': { 'raw': '((min-width: 641px) and (max-width: 860px))' },
         's-600-641': { 'raw': '((min-width: 600px) and (max-width: 640px))' },
         // '': { 'raw': '((max-width: 995px) and (max-height: 700px))' },
